@@ -11,6 +11,5 @@ A new Flutter project.
 <img src="assets/Screenshot_20250908_204350.png" alt="" width="540">
 
 ## Video Demo
-<video width="1080" controls>
-  <source src="assets/Screen_recording_20250908_210018.webm" type="video/mp4">
-</video>
+assets/Screen_recording_20250908_210018.webm
+<img src="assets/Screen_recording_20250908_210018.gif" alt="" width="540">
