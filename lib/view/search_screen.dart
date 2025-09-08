@@ -59,7 +59,7 @@ class _SearchScreenState extends State<SearchScreen> {
                     controller: _controller,
                     cursorColor: Colors.blueAccent,
                     decoration: InputDecoration(
-                      hintText: "Enter keyword...",
+                      hintText: "Enter keyword",
                       hintStyle: const TextStyle(
                         color: Colors.black54,
                         height: 2.0,
