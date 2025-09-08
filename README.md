@@ -4,13 +4,14 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+## Ảnh giao diện
 
-A few resources to get you started if this is your first Flutter project:
+<img src="assets/Screenshot_20250908_204251.png" alt="Trang chính" width="1080">
+<img src="assets/Screenshot_20250908_204330.png" alt="Chi tiết sản phẩm" width="1080">
+<img src="assets/Screenshot_20250908_204350.png" alt="Chi tiết sản phẩm" width="1080">
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Video Demo
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<video width="400" controls>
+  <source src="assets/Screen_recording_20250908_210018.webm" type="video/mp4">
+</video>
