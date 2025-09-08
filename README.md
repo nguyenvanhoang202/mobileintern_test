@@ -12,4 +12,4 @@ A new Flutter project.
 
 ## Video Demo
 assets/Screen_recording_20250908_210018.webm
-<img src="assets/Screen_recording_20250908_210018.gif" alt="" width="540">
+<img src="assets/Screen_recording_20250908_210018.gif" alt="" width="280">
