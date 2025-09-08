@@ -7,11 +7,11 @@ class LocationService {
 
   Future<List<LocationModel>> searchLocation(String query) async {
     final url = Uri.parse(
-        "https://us1.locationiq.com/v1/search.php"
-            "?key=$apiKey"
-            "&q=$query"
-            "&format=json"
-            "&accept-language=vi"
+      "https://us1.locationiq.com/v1/search.php"
+      "?key=$apiKey"
+      "&q=$query"
+      "&format=json"
+      "&accept-language=vi",
     );
 
     final response = await http.get(url);

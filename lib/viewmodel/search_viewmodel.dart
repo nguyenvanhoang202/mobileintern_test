@@ -9,12 +9,15 @@ class SearchViewModel extends ChangeNotifier {
   Timer? _debounce;
 
   String _query = "";
+
   String get query => _query;
 
   List<LocationModel> _results = [];
+
   List<LocationModel> get results => _results;
 
   bool _isLoading = false;
+
   bool get isLoading => _isLoading;
 
   void onQueryChanged(String value) {
@@ -51,8 +54,11 @@ class SearchViewModel extends ChangeNotifier {
     _results = [];
     notifyListeners();
   }
+
   Future<void> openInGoogleMaps(String lat, String lon) async {
-    final webUrl = Uri.parse("https://www.google.com/maps/dir/?api=1&destination=$lat,$lon");
+    final webUrl = Uri.parse(
+      "https://www.google.com/maps/dir/?api=1&destination=$lat,$lon",
+    );
     try {
       await launchUrl(webUrl, mode: LaunchMode.externalApplication);
     } catch (e) {

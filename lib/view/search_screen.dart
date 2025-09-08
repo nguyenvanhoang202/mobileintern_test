@@ -22,6 +22,7 @@ class _SearchScreenState extends State<SearchScreen> {
     // Khi người dùng gõ, cập nhật ViewModel
     _controller.addListener(() {
       vm.onQueryChanged(_controller.text);
+      setState(() {});
     });
   }
 
@@ -65,28 +66,33 @@ class _SearchScreenState extends State<SearchScreen> {
                         height: 2.0,
                       ),
                       border: InputBorder.none,
-                      prefixIcon: vm.isLoading
-                          ? const Padding(
-                        padding: EdgeInsets.all(12),
-                        child: SizedBox(
-                          width: 18,
-                          height: 18,
-                          child: CircularProgressIndicator(
-                            strokeWidth: 3,
-                            color: Colors.blueAccent,
-                          ),
-                        ),
-                      )
-                          : const Icon(Icons.search, color: Colors.black),
-                      suffixIcon: vm.query.isNotEmpty
-                          ? IconButton(
-                        icon: const Icon(Icons.clear, color: Colors.black),
-                        onPressed: () {
-                          _controller.clear();
-                          vm.clearQuery();
-                        },
-                      )
-                          : null,
+                      prefixIcon:
+                          vm.isLoading
+                              ? const Padding(
+                                padding: EdgeInsets.all(12),
+                                child: SizedBox(
+                                  width: 18,
+                                  height: 18,
+                                  child: CircularProgressIndicator(
+                                    strokeWidth: 3,
+                                    color: Colors.blueAccent,
+                                  ),
+                                ),
+                              )
+                              : const Icon(Icons.search, color: Colors.black),
+                      suffixIcon:
+                          _controller.text.isNotEmpty
+                              ? IconButton(
+                                icon: const Icon(
+                                  Icons.clear,
+                                  color: Colors.black,
+                                ),
+                                onPressed: () {
+                                  _controller.clear();
+                                  vm.clearQuery();
+                                },
+                              )
+                              : null,
                     ),
                   ),
                 ),
@@ -105,8 +111,8 @@ class _SearchScreenState extends State<SearchScreen> {
                         ),
                         trailing: IconButton(
                           icon: const Icon(Icons.directions),
-                          onPressed: () =>
-                              vm.openInGoogleMaps(item.lat, item.lon),
+                          onPressed:
+                              () => vm.openInGoogleMaps(item.lat, item.lon),
                         ),
                       );
                     },
