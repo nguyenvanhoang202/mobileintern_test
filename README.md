@@ -6,9 +6,9 @@ A new Flutter project.
 
 ## Ảnh giao diện
 
-<img src="assets/Screenshot_20250908_204251.png" alt="Trang chính" width="1080">
-<img src="assets/Screenshot_20250908_204330.png" alt="Chi tiết sản phẩm" width="1080">
-<img src="assets/Screenshot_20250908_204350.png" alt="Chi tiết sản phẩm" width="1080">
+<img src="assets/Screenshot_20250908_204251.png" alt="" width="1080">
+<img src="assets/Screenshot_20250908_204330.png" alt="" width="1080">
+<img src="assets/Screenshot_20250908_204350.png" alt="" width="1080">
 
 ## Video Demo
 
