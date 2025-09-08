@@ -52,14 +52,9 @@ class SearchViewModel extends ChangeNotifier {
     notifyListeners();
   }
   Future<void> openInGoogleMaps(String lat, String lon) async {
-    final geoUrl = Uri.parse("geo:$lat,$lon?q=$lat,$lon");
-    final webUrl = Uri.parse("https://www.google.com/maps/dir/?api=1&destination=LAT,LON");
-
+    final webUrl = Uri.parse("https://www.google.com/maps/dir/?api=1&destination=$lat,$lon");
     try {
-      final success = await launchUrl(geoUrl, mode: LaunchMode.externalApplication);
-      if (!success) {
-        await launchUrl(webUrl, mode: LaunchMode.externalApplication);
-      }
+      await launchUrl(webUrl, mode: LaunchMode.externalApplication);
     } catch (e) {
       debugPrint(" Không mở được Google Maps: $e");
     }
